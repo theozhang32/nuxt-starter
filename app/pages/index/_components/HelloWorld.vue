@@ -7,5 +7,8 @@
  * @FilePath     : /frontend-nuxt-startkit/app/components/HelloWorld.vue
 -->
 <template>
-  <div>Hello World</div>
+  <div class="pt-20 flex flex-col items-center">
+    <span class="text-2xl font-bold">Hello World</span>
+    <NButton>Click me</NButton>
+  </div>
 </template>

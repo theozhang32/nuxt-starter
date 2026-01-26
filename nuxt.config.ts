@@ -1,4 +1,4 @@
-import { pwa } from './app/config/pwa'
+import tailwindcss from "@tailwindcss/vite";
 import { appDescription } from './app/constants/index'
 
 export default defineNuxtConfig({
@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
     '@nuxt/content',
+    '@nuxt/image',
+    '@bg-dev/nuxt-naiveui',
+    '@nuxtjs/color-mode',
   ],
 
   css: ['~/assets/css/main.css'],
@@ -40,8 +43,20 @@ export default defineNuxtConfig({
     },
   },
 
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
+
   colorMode: {
     classSuffix: '',
+  },
+
+  naiveui: {
+    spaLoadingTemplate: {
+      name: "bar-scale",
+    },
   },
 
   future: {

@@ -8,14 +8,13 @@ catalogs:
     '@nuxt/kit': ^4.3.0
     '@nuxt/schema': ^4.3.0
     '@nuxtjs/color-mode': ^3.5.2
+    '@tailwindcss/vite': ^4.1.18
     '@pinia/nuxt': ^0.11.3
-    '@nuxtjs/tailwindcss': ^6.14.0
     '@vite-pwa/nuxt': ^1.1.0
     '@vueuse/nuxt': ^14.1.0
-    tailwindcss: ^4.1.18
     better-sqlite3: ^12.6.2
     nuxt: ^4.3.0
-    unocss: ^66.6.0
+    tailwindcss: ^4.1.18
     unplugin: ^2.3.10
     vite: ^7.1.12
     zod: ^4.3.6
@@ -27,11 +26,11 @@ catalogs:
     typescript: ^5.9.3
     vue-tsc: ^3.2.2
   frontend:
+    '@bg-dev/nuxt-naiveui': ^2.0.0
+    '@nuxt/image': ^2.0.0
     '@vueuse/core': ^14.1.0
     pinia: ^3.0.4
     vue: ^3.5.27
-    '@nuxt/ui': ^4.4.0
-    '@nuxt/image': ^2.0.0
 
 onlyBuiltDependencies:
   - '@parcel/watcher'

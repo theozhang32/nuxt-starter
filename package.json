@@ -24,14 +24,14 @@
     "better-sqlite3": "catalog:build",
     "pinia": "catalog:frontend",
     "zod": "catalog:build",  
-    "@nuxt/ui": "catalog:frontend",
-    "@nuxt/image": "catalog:frontend"
+    "@nuxt/image": "catalog:frontend",
+    "@bg-dev/nuxt-naiveui": "catalog:frontend"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
     "@nuxt/devtools": "catalog:build",
     "@nuxt/eslint": "catalog:build",
-    "@nuxtjs/tailwindcss": "catalog:build",
+    "@tailwindcss/vite": "catalog:build",
     "@types/node": "catalog:dev",
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
