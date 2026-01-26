@@ -14,7 +14,7 @@ useHead({
 </template>
 
 <style>
-@import url(~/assets/css/layout.css);
+
 html,
 body,
 #__nuxt {
