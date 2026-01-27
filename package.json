@@ -30,7 +30,6 @@
     "zod": "catalog:build"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "catalog:dev",
     "@nuxt/devtools": "catalog:build",
     "@nuxt/eslint": "catalog:build",
     "@tailwindcss/vite": "catalog:build",

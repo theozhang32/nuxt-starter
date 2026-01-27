@@ -22,7 +22,6 @@ catalogs:
     vite: ^7.1.12
     zod: ^4.3.6
   dev:
-    '@antfu/eslint-config': ^7.1.0
     '@th1o/frontend-lint': ^0.0.3
     '@types/node': ^25.0.10
     eslint: ^9.39.2
