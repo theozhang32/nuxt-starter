@@ -12,6 +12,8 @@
     "start": "node .output/server/index.mjs",
     "start:generate": "npx serve .output/public",
     "lint": "eslint .",
+    "lint:style": "stylelint app/**/*.{vue,css}",
+    "lint:fix": "stylelint app/**/*.{vue,css} --fix && eslint . --fix",
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
@@ -32,10 +34,12 @@
     "@nuxt/devtools": "catalog:build",
     "@nuxt/eslint": "catalog:build",
     "@tailwindcss/vite": "catalog:build",
+    "@th1o/frontend-lint": "catalog:dev",
     "@types/node": "catalog:dev",
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
     "nuxt": "catalog:build",
+    "stylelint": "catalog:dev",
     "tailwindcss": "catalog:build",
     "typescript": "catalog:dev",
     "vue": "catalog:frontend",

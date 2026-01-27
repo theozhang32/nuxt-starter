@@ -1,4 +1,4 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite'
 import { appDescription } from './app/config/siteMeta'
 
 export default defineNuxtConfig({
@@ -13,12 +13,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
   ],
 
-  css: ['~/assets/css/main.css'],
-
   imports: {
-    dirs: [
-      '~/stores',
-    ],
+    dirs: ['~/stores'],
   },
 
   devtools: {
@@ -43,20 +39,10 @@ export default defineNuxtConfig({
     },
   },
 
-  vite: {
-    plugins: [
-      tailwindcss(),
-    ],
-  },
+  css: ['~/assets/css/main.css'],
 
   colorMode: {
     classSuffix: '',
-  },
-
-  naiveui: {
-    spaLoadingTemplate: {
-      name: "bar-scale",
-    },
   },
 
   future: {
@@ -86,12 +72,22 @@ export default defineNuxtConfig({
     // },
   },
 
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
   eslint: {
     config: {
       standalone: false,
       nuxt: {
         sortConfigKeys: true,
       },
+    },
+  },
+
+  naiveui: {
+    spaLoadingTemplate: {
+      name: 'bar-scale',
     },
   },
 

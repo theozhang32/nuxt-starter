@@ -1,12 +1,11 @@
 // @ts-check
-import antfu from '@antfu/eslint-config'
+import createESLintConfig from '@th1o/frontend-lint'
 import nuxt from './.nuxt/eslint.config.mjs'
 
-export default antfu(
+export default createESLintConfig(
   {
-    unocss: true,
     formatters: true,
     pnpm: true,
-  },
+  }
 )
   .append(nuxt())

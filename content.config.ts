@@ -6,7 +6,7 @@
  * @Description  :
  * @FilePath     : /vitesse-nuxt/content.config.ts
  */
-import { defineCollection, defineContentConfig } from '@nuxt/content'
+import { defineContentConfig } from '@nuxt/content'
 
 export default defineContentConfig({
   collections: {},
