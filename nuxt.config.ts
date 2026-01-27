@@ -1,5 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
-import { appDescription } from './app/constants/index'
+import { appDescription } from './app/config/siteMeta'
 
 export default defineNuxtConfig({
   modules: [

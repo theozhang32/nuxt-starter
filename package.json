@@ -15,7 +15,9 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
+    "@bg-dev/nuxt-naiveui": "catalog:frontend",
     "@nuxt/content": "catalog:build",
+    "@nuxt/image": "catalog:frontend",
     "@nuxtjs/color-mode": "catalog:build",
     "@pinia/nuxt": "catalog:build",
     "@vite-pwa/nuxt": "catalog:build",
@@ -23,9 +25,7 @@
     "@vueuse/nuxt": "catalog:build",
     "better-sqlite3": "catalog:build",
     "pinia": "catalog:frontend",
-    "zod": "catalog:build",  
-    "@nuxt/image": "catalog:frontend",
-    "@bg-dev/nuxt-naiveui": "catalog:frontend"
+    "zod": "catalog:build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
@@ -36,8 +36,8 @@
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
     "nuxt": "catalog:build",
-    "typescript": "catalog:dev",
     "tailwindcss": "catalog:build",
+    "typescript": "catalog:dev",
     "vue": "catalog:frontend",
     "vue-tsc": "catalog:dev"
   },
