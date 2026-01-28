@@ -1,7 +1,4 @@
 {
-  "files.associations": {
-    "*.css": "postcss"
-  },
 
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
@@ -41,5 +38,16 @@
   ],
   "interline-translate.knownPopularWordCount": 6000,
   "iconify.annotations": true,
-  "iconify.inplace": true
+  "iconify.inplace": true,
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
 }

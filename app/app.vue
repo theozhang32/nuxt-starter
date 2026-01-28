@@ -1,9 +1,9 @@
 <template>
-  <NaiveConfig>
+  <UApp>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-  </NaiveConfig>
+  </UApp>
 </template>
 
 <script setup lang="ts">

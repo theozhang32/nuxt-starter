@@ -17,21 +17,29 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@bg-dev/nuxt-naiveui": "catalog:frontend",
+    "@bubblesortt/nuxt-es-toolkit": "catalog:common",
     "@nuxt/content": "catalog:build",
     "@nuxt/image": "catalog:frontend",
+    "@nuxt/ui": "catalog:frontend",
     "@nuxtjs/color-mode": "catalog:build",
+    "@nuxtjs/device": "catalog:frontend",
     "@pinia/nuxt": "catalog:build",
     "@vite-pwa/nuxt": "catalog:build",
     "@vueuse/core": "catalog:frontend",
     "@vueuse/nuxt": "catalog:build",
+    "alova": "catalog:common",
     "better-sqlite3": "catalog:build",
+    "dayjs-nuxt": "catalog:common",
     "pinia": "catalog:frontend",
     "zod": "catalog:build"
   },
   "devDependencies": {
+    "@iconify-json/lucide": "catalog:icon",
+    "@iconify-json/simple-icons": "catalog:icon",
     "@nuxt/devtools": "catalog:build",
     "@nuxt/eslint": "catalog:build",
+    "@nuxt/hints": "catalog:dev",
+    "@nuxt/icon": "catalog:build",
     "@tailwindcss/vite": "catalog:build",
     "@th1o/frontend-lint": "catalog:dev",
     "@types/node": "catalog:dev",
@@ -46,7 +54,6 @@
   },
   "resolutions": {
     "@nuxt/devtools": "catalog:build",
-    "@nuxt/kit": "catalog:build",
     "@nuxt/schema": "catalog:build",
     "nuxt": "catalog:build",
     "unplugin": "catalog:build",

@@ -3,14 +3,22 @@ import { appDescription } from './app/config/siteMeta'
 
 export default defineNuxtConfig({
   modules: [
+    /** Nuxt4 + Vue3 生态 */
     '@vueuse/nuxt',
     '@pinia/nuxt',
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
     '@nuxt/content',
     '@nuxt/image',
-    '@bg-dev/nuxt-naiveui',
+    '@nuxt/ui',
     '@nuxtjs/color-mode',
+    '@nuxt/icon',
+    '@nuxt/hints',
+    /** 通用模块 */
+    // dayjs
+    'dayjs-nuxt',
+    // es-toolkit
+    '@bubblesortt/nuxt-es-toolkit',
   ],
 
   imports: {
@@ -43,6 +51,10 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
+  },
+
+  ui: {
+    fonts: false,
   },
 
   future: {
@@ -82,12 +94,6 @@ export default defineNuxtConfig({
       nuxt: {
         sortConfigKeys: true,
       },
-    },
-  },
-
-  naiveui: {
-    spaLoadingTemplate: {
-      name: 'bar-scale',
     },
   },
 
