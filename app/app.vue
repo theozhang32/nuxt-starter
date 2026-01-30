@@ -7,10 +7,10 @@
 </template>
 
 <script setup lang="ts">
-import { appName } from '~/config/siteMeta'
+import { APP_TITLE } from '~/config/runtime'
 
 useHead({
-  title: appName,
+  title: APP_TITLE,
 })
 </script>
 

@@ -27,10 +27,13 @@
     "@vite-pwa/nuxt": "catalog:build",
     "@vueuse/core": "catalog:frontend",
     "@vueuse/nuxt": "catalog:build",
-    "alova": "catalog:common",
+    "axios": "catalog:common",
+    "axios-retry": "catalog:common",
     "better-sqlite3": "catalog:build",
     "dayjs-nuxt": "catalog:common",
+    "nanoid": "catalog:common",
     "pinia": "catalog:frontend",
+    "qs": "catalog:common",
     "zod": "catalog:build"
   },
   "devDependencies": {
@@ -43,6 +46,7 @@
     "@tailwindcss/vite": "catalog:build",
     "@th1o/frontend-lint": "catalog:dev",
     "@types/node": "catalog:dev",
+    "@types/qs": "catalog:dev",
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
     "nuxt": "catalog:build",

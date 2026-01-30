@@ -1,7 +1,16 @@
 <template>
   <div>
     <h1>Error</h1>
-    <code>{{ error?.toJSON() }}</code>
+    <code>
+      {{
+        error
+          ? (error.toJSON
+            ? error.toJSON()
+            : JSON.stringify(error, null, 2)
+          )
+          : 'Unknown error'
+      }}
+    </code>
   </div>
 </template>
 
