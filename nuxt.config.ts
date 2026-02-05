@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     /** Nuxt4 + Vue3 生态 */
     '@vueuse/nuxt',
     '@pinia/nuxt',
-    '@vite-pwa/nuxt',
+    // '@vite-pwa/nuxt',
     '@nuxt/eslint',
     '@nuxt/content',
     '@nuxt/image',
@@ -20,6 +20,8 @@ export default defineNuxtConfig({
     // es-toolkit
     '@bubblesortt/nuxt-es-toolkit',
   ],
+
+  // ssr: false,
 
   imports: {
     dirs: ['~/stores'],
@@ -80,13 +82,18 @@ export default defineNuxtConfig({
     // prerender: {
     //   crawlLinks: false,
     //   routes: ['/'],
-    //   ignore: ['/hi'],
     // },
   },
 
   vite: {
     plugins: [tailwindcss()],
   },
+
+  // hooks: {
+  //   'prerender:routes': function({ routes }) {
+  //     routes.clear()
+  //   },
+  // },
 
   eslint: {
     config: {

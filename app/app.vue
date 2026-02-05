@@ -1,16 +1,19 @@
 <template>
-  <UApp>
+  <!-- <UApp>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-  </UApp>
+  </UApp> -->
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import { APP_TITLE } from '~/config/runtime'
+const { appTitle } = useAppConfig()
 
 useHead({
-  title: APP_TITLE,
+  title: appTitle,
 })
 </script>
 

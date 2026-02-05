@@ -1,7 +1,7 @@
 /*
  * @Author       : 张天昊
  * @Date         : 2026-01-29 17:01:16
- * @LastEditTime : 2026-01-30 09:45:54
+ * @LastEditTime : 2026-02-03 14:35:58
  * @LastEditors  : 张天昊
  * @Description  :
  * @FilePath     : /frontend-nuxt-startkit/app/plugins/axios.ts
@@ -19,6 +19,7 @@ const requestState: RequestState = {
 }
 
 export default defineNuxtPlugin(() => {
+  const { apiSuccessCode } = useAppConfig()
   const axiosInstance = createRequest<BizResponse, unknown, RequestState>({
     // baseURL: import.meta.env.VITE_API_BASE_URL,
   }, {
