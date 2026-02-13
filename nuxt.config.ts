@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
 import { APP_DESCRIPTION } from './app/config/runtime'
 
@@ -14,6 +15,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/icon',
     '@nuxt/hints',
+    // '@nuxthub/core',
     /** 通用模块 */
     // dayjs
     'dayjs-nuxt',
@@ -55,6 +57,13 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
+  content: {
+    database: {
+      type: 'sqlite',
+      filename: './contents.sqlite',
+    },
+  },
+
   ui: {
     fonts: false,
   },
@@ -83,6 +92,12 @@ export default defineNuxtConfig({
     //   crawlLinks: false,
     //   routes: ['/'],
     // },
+  },
+
+  hub: {
+    db: 'mysql',
+    // kv: true,
+    // blob: true,
   },
 
   vite: {
